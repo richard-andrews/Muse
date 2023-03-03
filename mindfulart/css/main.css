@@ -1,0 +1,17 @@
+.centre {
+    margin: absolute;
+    width: 60%;
+    border: 3px solid #0d82cb;
+    padding: 10px;
+  }
+
+  .threedee{
+      margin: auto;
+      width: 100;
+  }
+
+  .twodee{
+      margin: auto;
+      width: 200;
+
+  }
