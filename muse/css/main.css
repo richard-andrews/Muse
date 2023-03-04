@@ -1,3 +1,4 @@
+/* COLOURS */
 :root{
     --lilac: #D499B9;
     --dark-blue: #1F5673;
@@ -6,23 +7,11 @@
     --egg: #F4EBD9;
 }
 
+/* GENERAL */
 * {
   margin: 0;
   padding:0;
 }
-
-h1{ 
-  font-family: 'Lora', serif;
-  font-size: 5em;
-  font-weight: 600;
-} 
-
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-}
-
-
 
 html, body{
   margin:0;
@@ -32,27 +21,37 @@ html, body{
   min-height:100%; 
 }
 
-div.art{
-  width:75%;
+
+/* TAGS */
+h1{ 
+  font-family: 'Lora', serif;
+  font-size: 5em;
+  font-weight: 600;
+  line-height: 7em;
+} 
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+
+/* CLASSES */
+.hor-centre{
+  display:flex;  
+  justify-content: center;
+}
+
+.vert-centre{
+  display:flex;
+  align-items:center;
+}
+
+.art{
+  width:40%;
   margin:auto;
   padding:100px;
-}
-
-#threedee{
-  height:50%;
-}
-
-#art{
-  margin: 0px;
-  width: 100%;
-  background-color: var(--light-blue);
-
-}
-
-div.meditation{
-  margin: auto;
-  background-color:var(--blue);
-
 }
 
 div.header{
@@ -64,6 +63,28 @@ div.header{
   display:flex;
   align-items:center;
   background-color: var(--dark-blue)
+}
+
+/* IDs */
+#threedee{
+  aspect-ratio: 4/3;
+}
+
+#art{
+  width: 100%;
+  background-color: var(--light-blue);
+
+}
+
+#meditation{
+  width:100%;
+  background-color:var(--blue);
+}
+
+#audio{
+  width:50%;
+  margin:auto;
+
 }
 
 #footer {
