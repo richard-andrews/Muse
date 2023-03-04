@@ -1,16 +1,28 @@
+:root{
+    --lilac: #D499B9;
+    --dark-blue: #1F5673;
+    --blue: #759FBC;
+    --light-blue: #9BC4CC;
+    --egg: #F4EBD9;
+}
+
 * {
-  color: black;
   margin: 0;
   padding:0;
 }
 
 h1{ 
   font-family: 'Lora', serif;
-  font-size: 50px;
+  font-size: 5em;
+  font-weight: 600;
 } 
+
 p{
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
+
+
 
 html, body{
   margin:0;
@@ -20,40 +32,44 @@ html, body{
   min-height:100%; 
 }
 
-.threedee{
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: lightblue;
+div.art{
+  width:75%;
+  margin:auto;
+  padding:100px;
 }
 
-.twodee{
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(219, 142, 33);
+#threedee{
+  height:50%;
 }
 
-.art{
-  margin: auto;
-  height: 500px;
-  background-color: rgb(103, 228, 31);
-
-}
-
-.meditation{
-  margin: auto;
-  background-color: rgb(136, 12, 12);
-
-}
-
-.header{
-  margin: 0;
-  border: 0;
-  padding-left: 50px;
+#art{
+  margin: 0px;
   width: 100%;
+  background-color: var(--light-blue);
+
+}
+
+div.meditation{
+  margin: auto;
+  background-color:var(--blue);
+
+}
+
+div.header{
+  margin: 0;
+  padding:3%;
+  border: 0;
+  width: auto;
   height: 10%;
   display:flex;
   align-items:center;
-  background-color: rgb(221, 33, 177);
+  background-color: var(--dark-blue)
+}
+
+#footer {
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 600px;
+  background-color: var(--dark-blue);
 }
