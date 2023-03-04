@@ -25,9 +25,8 @@ html, body{
 /* TAGS */
 h1{ 
   font-family: 'Lora', serif;
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 600;
-  line-height: 7em;
 } 
 
 p{
@@ -54,17 +53,6 @@ p{
   padding:100px;
 }
 
-div.header{
-  margin: 0;
-  padding:3%;
-  border: 0;
-  width: auto;
-  height: 10%;
-  display:flex;
-  align-items:center;
-  /* background-color: var(--dark-blue) */
-}
-
 /* IDs */
 #background{
   background: hsla(201, 58%, 29%, 1);
@@ -72,33 +60,45 @@ div.header{
   background: -moz-linear-gradient(0deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F5673", endColorstr="#759FBC", GradientType=1 );
+
+  height: 120%;
+}
+
+#header{
+  margin: 0;
+  padding:3%;
+  border: 0;
+  width: auto;
+  height: 10%;
+}
+
+#logo{
+  font-size:1.5em;
+  color: var(--egg)
+
+}
+
+#art{
+  width: 100%;
 }
 
 #threedee{
   aspect-ratio: 4/3;
 }
 
-#art{
-  width: 100%;
-  background-color: var(--light-blue);
-
-}
-
 #meditation{
   width:100%;
-  background-color:var(--blue);
+  /* background-color:var(--blue); */
 }
 
 #audio{
   width:50%;
   margin:auto;
-
 }
 
 #footer {
   margin: 0;
   border: 0;
-  width: 100%;
-  height: 600px;
+  height: 30%;
   background-color: var(--dark-blue);
 }
