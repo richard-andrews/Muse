@@ -62,10 +62,18 @@ div.header{
   height: 10%;
   display:flex;
   align-items:center;
-  background-color: var(--dark-blue)
+  /* background-color: var(--dark-blue) */
 }
 
 /* IDs */
+#background{
+  background: hsla(201, 58%, 29%, 1);
+  background: linear-gradient(0deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
+  background: -moz-linear-gradient(0deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F5673", endColorstr="#759FBC", GradientType=1 );
+}
+
 #threedee{
   aspect-ratio: 4/3;
 }
