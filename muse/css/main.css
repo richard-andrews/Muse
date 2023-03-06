@@ -5,6 +5,7 @@
     --blue: #759FBC;
     --light-blue: #9BC4CC;
     --egg: #F4EBD9;
+
 }
 
 /* GENERAL */
@@ -21,18 +22,34 @@ html, body{
   min-height:100%; 
 }
 
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 /* TAGS */
 h1{ 
   font-family: 'Lora', serif;
   font-size: 3em;
   font-weight: 600;
+  color: var(--egg);
+} 
+
+h2{ 
+  font-family: 'Monserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color:var(--egg);
 } 
 
 p{
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 2em;
+  color: var(--egg);
 }
 
 
@@ -53,6 +70,10 @@ p{
   padding:100px;
 }
 
+.selected{
+  color: var(--lilac);
+}
+
 /* IDs */
 #background{
   background: hsla(201, 58%, 29%, 1);
@@ -65,9 +86,7 @@ p{
 }
 
 #header{
-  margin: 0;
   padding:3%;
-  border: 0;
   width: auto;
   height: 10%;
   display: flex;
@@ -76,11 +95,13 @@ p{
 #logo{
   font-size:1.5em;
   width:50%;
-  color: var(--egg)
 }
 
 #nav{
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #art{
