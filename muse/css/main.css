@@ -22,13 +22,25 @@ html, body{
   scroll-behavior: smooth;
 }
 
-a:link { text-decoration: none; }
+a:link {
+  color: var(--dark-blue);
+  text-decoration: none; 
+}
 
-a:visited { text-decoration: none; }
+a:visited { 
+  color: var(--dark-blue);
+  text-decoration: none; 
+}
 
-a:hover { text-decoration: none; }
+a:hover {
+  color: var(--lilac);
+  text-decoration: none; 
+}
 
-a:active {text-decoration: none; }
+a:active {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
 
 /* TAGS */
 h1{ 
@@ -73,7 +85,13 @@ p{
 }
 
 .selected{
-  color: var(--lilac);
+  background-color: var(--lilac);
+  border-radius: 13px;
+  padding:7px;
+}
+
+.selected:hover{
+  color: var(--dark-blue) !important;
 }
 
 .art{
@@ -93,9 +111,12 @@ p{
 }
 
 #header{
-  padding:3%;
+  padding-top:3vh;
+  padding-bottom: 3vh;
+  padding-left: 8vh;
+  padding-right: 8vh;
   width: auto;
-  height: 10%;
+  height: 10vh;
   display: flex;
 }
 
@@ -122,6 +143,7 @@ p{
 #art{
   margin:auto;
   height: 70vh;
+  padding: 25px;
   aspect-ratio: 4/3;
 }
 
@@ -165,8 +187,9 @@ p{
 }
 
 #oops {
-  padding-top:20%;
   width: 30%;
+  height:60vh;
+  padding-top: 24vh;
   margin:auto;
   text-align: center;
 }
