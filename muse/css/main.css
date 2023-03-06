@@ -70,12 +70,17 @@ p{
   border: 0;
   width: auto;
   height: 10%;
+  display: flex;
 }
 
 #logo{
   font-size:1.5em;
+  width:50%;
   color: var(--egg)
+}
 
+#nav{
+  flex-grow: 1;
 }
 
 #art{
@@ -88,7 +93,6 @@ p{
 
 #meditation{
   width:100%;
-  /* background-color:var(--blue); */
 }
 
 #audio{
@@ -98,7 +102,25 @@ p{
 
 #footer {
   margin: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top:5%;
+  padding-bottom: 8%;
   border: 0;
-  height: 30%;
+  height: auto;
   background-color: var(--dark-blue);
+  display:flex;
+  color:var(--egg);
+}
+
+#about{
+  width:50%
+}
+
+#footer h1{
+  padding-bottom:.5em;
+}
+
+#details{
+  flex-grow: 1;
 }
