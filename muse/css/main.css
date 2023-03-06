@@ -18,7 +18,6 @@ html, body{
   margin:0;
   padding:0;
   border:0;
-  height:100%;
   min-height:100%; 
   scroll-behavior: smooth;
 }
@@ -29,7 +28,7 @@ a:visited { text-decoration: none; }
 
 a:hover { text-decoration: none; }
 
-a:active { text-decoration: none; }
+a:active {text-decoration: none; }
 
 /* TAGS */
 h1{ 
@@ -42,14 +41,14 @@ h1{
 h2{ 
   font-family: 'Monserrat', sans-serif;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 500;
   color:var(--egg);
 } 
 
 h3{ 
   font-family: 'Monserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 500;
   color:var(--egg);
 } 
 
@@ -57,6 +56,7 @@ p{
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 2em;
+  font-weight: 400;
   color: var(--egg);
 }
 
@@ -72,14 +72,13 @@ p{
   align-items:center;
 }
 
-.art{
-  width:50%;
-  margin:auto;
-  padding:3%;
-}
-
 .selected{
   color: var(--lilac);
+}
+
+.art{
+  height: 100%;
+  width: 100%;
 }
 
 /* IDs */
@@ -90,7 +89,7 @@ p{
   background: -webkit-linear-gradient(90deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F5673", endColorstr="#759FBC", GradientType=1 );
 
-  height: 120%;
+  height: 100%;
 }
 
 #header{
@@ -110,46 +109,47 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+}
+
+#nav > * {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  color:var(--dark-blue);
 }
 
 #art{
-  width: 100%;
-  height: 60%;
-}
-
-#threedee{
+  margin:auto;
+  height: 70vh;
   aspect-ratio: 4/3;
 }
 
 #meditation{
-  width:100%;
-  height:30%;
+  height:30vh;
+  display:flex;
 }
 
-#hint{ 
-  width:100%;
+#hint{
+  width:50%;
 }
 
 #player{
-  width:100%;
-  margin:auto;
+  flex-grow: 1;
 }
 
 #footer {
-  margin: 0;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top:5%;
-  padding-bottom: 8%;
-  border: 0;
-  height: auto;
+  height: 100vh;
   background-color: var(--dark-blue);
-  display:flex;
-  color:var(--egg);
+  display: flex;
 }
 
 #about{
-  width:50%
+  width:50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
 #footer h1{
@@ -157,7 +157,11 @@ p{
 }
 
 #details{
-  flex-grow: 1;
+  width:50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
 #oops {
