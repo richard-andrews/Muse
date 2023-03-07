@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html, body{
@@ -45,8 +46,8 @@ a:active {
 /* TAGS */
 h1{ 
   font-family: 'Lora', serif;
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 2.5em;
+  font-weight: 500;
   color: var(--egg);
 } 
 
@@ -60,7 +61,7 @@ h2{
 h3{ 
   font-family: 'Monserrat', sans-serif;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   color:var(--egg);
 } 
 
@@ -84,10 +85,14 @@ p{
   align-items:center;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .selected{
   background-color: var(--lilac);
-  border-radius: 13px;
-  padding:7px;
+  border-radius: 1em;
+  padding: 0.5em;;
 }
 
 .selected:hover{
@@ -99,13 +104,29 @@ p{
   width: 100%;
 }
 
+.logo > *{
+  font-size: 6em;
+  font-weight: 500;
+  padding: 2
+}
+
+.footer{
+  width:50%;
+}
+
+
+.details{
+  color:var(--egg) !important;
+}
+
 /* IDs */
 #background{
-  background: hsla(201, 58%, 29%, 1);
-  background: linear-gradient(0deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
-  background: -moz-linear-gradient(0deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(201, 58%, 29%, 1) 0%, hsla(205, 35%, 60%, 1) 29%, hsla(190, 32%, 70%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F5673", endColorstr="#759FBC", GradientType=1 );
+  /* cite gradient maker here https://coolors.co/gradient-maker/ */
+  background: hsla(190, 32%, 70%, 1);
+  background: linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
+  background: -moz-linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
+  background: -webkit-linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", endColorstr="#759FBC", GradientType=1 );
 
   height: 100%;
 }
@@ -120,9 +141,12 @@ p{
   display: flex;
 }
 
-#logo{
-  font-size:1.5em;
+#header_logo{
   width:50%;
+}
+
+#logo{
+  margin:2em;
 }
 
 #nav{
@@ -142,7 +166,7 @@ p{
 
 #art{
   margin:auto;
-  height: 70vh;
+  width: 70vw;
   padding: 25px;
   aspect-ratio: 4/3;
 }
@@ -160,30 +184,19 @@ p{
   flex-grow: 1;
 }
 
-#footer {
+#footer{
   height: 100vh;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   display: flex;
 }
 
 #about{
-  width:50%;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top:50px;
-  padding-bottom: 50px;
+  width:70%;
+  margin:auto;
 }
 
-#footer h1{
-  padding-bottom:.5em;
-}
-
-#details{
-  width:50%;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top:50px;
-  padding-bottom: 50px;
+#footer_logo{
+  height:50%;
 }
 
 #oops {
