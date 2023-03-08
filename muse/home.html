@@ -12,12 +12,12 @@
     
     <body>
         <div id="homepage" class="flex-stack">
-            <div id="background" class="flex-stack">
+            
 
                 <!-- Header -->
                 <div id="header" class="flex-align" >
                     <div id="header_logo" class="vert-centre logo">
-                        <h1 >Muse</h1>
+                        <h1>Muse</h1>
                     </div> 
                     <div id="nav">
                         <div><a href="./home.html"  title="Takes you home to find your muse" class="selected">Home</a></div>
@@ -28,18 +28,21 @@
                     </div>               
                 </div>
 
+            <!-- main page -->
+            <div class="main flex-stack">
+
                 <!-- art -->
                 <div id="art">
                     <iframe title="Palladian Bridge" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share height="100%" width="100%" src="https://sketchfab.com/models/4a3b1d4de81146acba80c95a55d369ed/embed?autostart=1&camera=0&transparent=1&ui_hint=2&dnt=1"> </iframe> 
                 </div>
 
                 <!-- meditation player -->
-                <div id="meditation" class="flex-align hor-centre">
-                    <div id="hint" class="vert-centre hor-centre">
-                        <p >click on the player to start the audio meditation</p>
+                <div id="meditation" class="hor-centre">
+                    <div class="vert-centre hor-centre">
+                        <p class="vert-centre">click on the player to start the audio meditation</p>
                     </div>
-                    <div id="player" class=" vert-centre hor-centre">
-                        <audio controls >
+                    <div class=" vert-centre hor-centre">
+                        <audio controls class="vert-centre" >
                             <source src="./audio/Short - Sound Effect 01.mp3" type="audio/mpeg">
                         </audio>
                     </div>
