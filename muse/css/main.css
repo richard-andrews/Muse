@@ -11,7 +11,7 @@
 /* GENERAL */
 * {
   margin: 0;
-  padding:0;
+  padding:0px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -75,14 +75,20 @@ p{
 
 
 /* CLASSES */
+
+.content{
+  color:var(--egg) !important;
+  font-size: 1em;
+}
+
 .hor-centre{
-  display:flex;  
+  display: flex;  
   justify-content: center;
 }
 
 .vert-centre{
-  display:flex;
-  align-self:center;
+  display: flex;
+  align-self: center;
 }
 
 .text-center{
@@ -92,11 +98,15 @@ p{
 .selected{
   background-color: var(--lilac);
   border-radius: 1em;
-  padding: 0.5em;;
+  padding:0.5em
 }
 
 .selected:hover{
   color: var(--dark-blue) !important;
+}
+
+.content:link {
+  color: var(--lilac) !important;
 }
 
 .art{
@@ -107,20 +117,10 @@ p{
 .logo > *{
   font-size: 6em;
   font-weight: 500;
-  padding: 2
 }
 
 .footer{
   width:50%;
-}
-
-.content{
-  color:var(--egg) !important;
-  font-size: 1em;
-}
-
-.content:link {
-  color: var(--lilac) !important;
 }
 
 .flex-stack {
@@ -128,12 +128,13 @@ p{
   flex: 1;
   flex-direction: column;
 }
+
 .flex-align {
   flex-direction: row;
 }
 
 /* IDs */
-#background{
+.main{
   /* cite gradient maker here https://coolors.co/gradient-maker/ */
   background: hsla(190, 32%, 70%, 1);
   background: linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
@@ -144,18 +145,19 @@ p{
   height: 100vh;
 }
 
+.main > *{
+  padding:1em;
+}
+
 #header{
-  padding-top:3vh;
-  padding-bottom: 3vh;
-  padding-left: 8vh;
-  padding-right: 8vh;
   width: auto;
-  height: 10vh;
   display: flex;
+  background-color: var(--light-blue);
 }
 
 #header_logo{
   width:50%;
+  padding-left:2em;
 }
 
 #logo{
@@ -179,22 +181,7 @@ p{
 
 #art{
   margin:auto;
-  height: 80vh;
-  padding: 25px;
-  aspect-ratio: 4/3;
-}
-
-#meditation{
-  height:20vh;
-  display:flex;
-}
-
-#hint{
-  width:50%;
-}
-
-#player{
-  flex-grow: 1;
+  max-height: 80vh;
 }
 
 #footer{
@@ -214,9 +201,8 @@ p{
 
 #oops {
   width: 30vw;
-  height:60vh;
   padding-top: 24vh;
-  margin:auto;
+  margin: auto;
   text-align: center;
 }
 
@@ -225,3 +211,30 @@ p{
   width:70vw;
   margin:auto;
 }
+
+
+.meditation{
+  flex:1;
+  width:50%
+}
+
+#meditation{
+  height:20vh;
+  display:flex;
+  flex-direction: column;
+}
+
+/* mobile responsiveness */
+@media screen and (min-width: 640px){
+  #meditation{
+    flex:1;
+    flex-direction: row !important;
+  }
+}
+
+.padding20{
+  padding:20px;
+}
+
+/* tablet responsive */
+@media screen and (min-width: 640px){}
