@@ -82,7 +82,7 @@ p{
 
 .vert-centre{
   display:flex;
-  align-items:center;
+  align-self:center;
 }
 
 .text-center{
@@ -179,13 +179,13 @@ p{
 
 #art{
   margin:auto;
-  width: 70vw;
+  height: 80vh;
   padding: 25px;
   aspect-ratio: 4/3;
 }
 
 #meditation{
-  height:30vh;
+  height:20vh;
   display:flex;
 }
 
