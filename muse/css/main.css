@@ -114,9 +114,22 @@ p{
   width:50%;
 }
 
-
-.details{
+.content{
   color:var(--egg) !important;
+  font-size: 1em;
+}
+
+.content:link {
+  color: var(--lilac) !important;
+}
+
+.flex-stack {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.flex-align {
+  flex-direction: row;
 }
 
 /* IDs */
@@ -128,7 +141,7 @@ p{
   background: -webkit-linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", endColorstr="#759FBC", GradientType=1 );
 
-  height: 100%;
+  height: 100vh;
 }
 
 #header{
@@ -190,7 +203,7 @@ p{
   display: flex;
 }
 
-#about{
+#licenses{
   width:70%;
   margin:auto;
 }
@@ -200,9 +213,15 @@ p{
 }
 
 #oops {
-  width: 30%;
+  width: 30vw;
   height:60vh;
   padding-top: 24vh;
   margin:auto;
   text-align: center;
+}
+
+/* about page */
+#about{
+  width:70vw;
+  margin:0;
 }
