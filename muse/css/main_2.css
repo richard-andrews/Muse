@@ -17,6 +17,11 @@ padding: 0px;
 border: 0;
 font-family: 'Montserrat', sans-serif;
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 html, body{
 min-height:100%;
@@ -114,7 +119,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 }
 
 .centre-horz{
-  justify-items: center;
+  justify-content: center;
 }
 
 .padding{
@@ -165,12 +170,20 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   height:100vh;
 }
 
+#art{
+  height: 80%;
+}
+
 #artefact{
-  margin: auto;
-  max-height: 70%;
   max-width: 70%;
   aspect-ratio: 4/3;
 }
+
+#meditation{
+  height:20%;
+}
+
+
 
 
 
@@ -282,33 +295,12 @@ flex:1;
 width:50%
 }
 
-#meditation{
-height:20vh;
-display:flex;
-flex-direction: column;
-justify-content: space-around;
-}
-
-/* mobile responsiveness */
+/* ------ */
+/* MOBILE */
+/* ------ */
 @media screen and (max-width: 640px){
-  /* #meditation{
-    flex:1;
-    flex-direction: row !important;
-  }
-  #footer{
-      flex-direction: row !important;
-  }
-  .footer {
-    width:50%;
-  }
-  #footer_logo{
-    flex-direction: row !important;
-  }
-  #licenses{
-    height:100vh
-  } */
   .half{
-    width:100%;
+    width: 100%;
   }
   .row{
     flex-direction: column;
@@ -317,6 +309,6 @@ justify-content: space-around;
     width:50%;
   }
   #artefact{
-    max-width:100%;
+    max-width: 100%;
   }
 }
