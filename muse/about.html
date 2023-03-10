@@ -7,37 +7,56 @@
         <meta name="description" content="Muse is where art therapy and mindfulness meditation meet to reduce stress for it's users. This is a prototype as part of my final year project for the University of Bath."/>
         <link rel="icon" href="./graphics/musefavicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat">
-        <link type="text/css" rel="stylesheet" href="./css/main.css" />
+        <link type="text/css" rel="stylesheet" href="./css/main_2.css" />
     </head>
     
     <body>
-        <!-- Header -->
-        <div id="header" class="flex-align" >
-            <div id="header_logo" class="vert-centre logo">
-                <h1>Muse</h1>
-            </div> 
-            <div id="nav">
-                <div class="nav_item"><a href="./home.html"  title="Takes you home to find your muse" >Home</a></div>
-                <div class="nav_item"><a href="./about.html" title="Takes you to our about section" class="selected">About</a></div>
-                <div class="nav_item"><a href="./wip.html" title="We're still working on this">Collection</a></div>
-                <div class="nav_item"><a href="./wip.html" title="We're still working on this">Profile</a></div>
-                <div class="nav_item"><a href="./home.html#art" title="We're still working on this">Meditate</a></div>
-            </div>               
-        </div>
+        <div id="homepage" class="flex column whole">
+            <!-- Header -->
+            <div id="header" class="flex row whole">
+                <div class="flex centre-vert centre-horz half">
+                    <img src="./graphics/muse.png" alt="Muse logo" class="padding logo">
+                </div> 
+                <div class="flex centre-vert half row distribute">
+                    <div class="nav-item padding centre-text centre-horz"><a href="./home_2.html"  title="Takes you home to find your muse">Home</a></div>
+                    <div class="nav-item padding centre-text centre-horz"><a href="./home_2.html#main" title="We're still working on this">Meditate</a></div>
+                    <div class="nav-item padding centre-text centre-horz"><a href="./wip.html" title="We're still working on this">Collection</a></div>
+                    <div class="nav-item padding centre-text centre-horz active"><a href="./about.html" title="Takes you to our about section">About</a></div>
+                    <div class="nav-item padding centre-text centre-horz"><a href="./wip.html" title="We're still working on this">Profile</a></div>
+                </div>               
+            </div>
 
-        <div class="main vert-centre">
-            <div id="footer_logo" class="hor-centre details">
-                <div id="logo" class="vert-centre">
-                    <img src="./graphics/logo.png" alt="Muse Logo">
-                </div>
-                <div class="logo vert-centre">
-                    <h1>Muse</h1>
+            <div id="main" class="flex gradient centre-horz centre-vert whole column">
+                <div id="about" class="flex column" >
+                    <h1>About</h1>
+                    <p>Muse is an app created by Richard Andrews for BSc. Computer Science Final Year project at the University of Bath, UK. Muse looks to combine mindfulness meditation with art therapy to induce calmness and reduce stress. <br> <br>We hope you enjoy!</p>
                 </div>
             </div>
-            <div id="about" class="flex-stack" >
-                <h1>About</h1>
-                <p>Muse is an app created by Richard Andrews for BSc. Computer Science Final Year project at the University of Bath, UK. Muse looks to combine mindfulness meditation with art therapy to induce calmness and reduce stress. <br> <br>We hope you enjoy!</p>
-            </div>
+
+            
+            <div id="footer" class="flex row whole centre-vert">
+                <div class="flex half semi centre-vert"> 
+                    <div class="padding">      
+                        <h1 class="padding">License</h1>
+                        <p class="padding">The models used here are licensed by <a href="">BaCH</a>, <a href="">BRLSI</a> and <a href="">The British Museum </a> the <a href=""> CC Attriburtion-NonCommercial-ShareAlike License</a>. </p>
+                    </div>   
+                </div>
+                <div class="flex half semi column centre-vert" >
+                    <div class="flex semi row centre-vert padding">
+                        <div class="flex half centre-horz">
+                            <img src="./graphics/logo.png" alt="Muse icon" class="padding">
+                        </div>
+                        <div class="flex half centre-vert centre-horz">
+                            <img src="./graphics/muse.png" alt="Muse logo" class="adding logo">
+                        </div>
+                    </div>
+                    <div class="flex semi centre-text centre-vert padding">
+                        <p class="padding">E: <a href="mailto:ra845@bath.ac.uk" >ra845@bath.ac.uk</a>
+                        <br>
+                        <br>
+                        Click <a href="../index.html" title="back to richard-andrews.co.uk">here</a> to go back to Richard's website</p>
+                    </div>
+                </div>
         </div>
     </body>
 </html>

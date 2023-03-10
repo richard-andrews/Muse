@@ -69,7 +69,7 @@ color:var(--egg);
 h3{ 
 font-family: 'Monserrat', sans-serif;
 font-size: 1em;
-font-weight: 500;
+font-weight: 600;
 color:var(--egg);
 }
 
@@ -195,6 +195,17 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 #footer{
   height:100vh;
   background-color: var(--blue);
+}
+
+#oops {
+  width: 30vw;
+  padding-top: 24vh;
+  margin: auto;
+  text-align: center;
+}
+
+#about{
+  width:60%;
 }
 
 
