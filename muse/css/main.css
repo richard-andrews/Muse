@@ -150,6 +150,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   aspect-ratio: auto;
 }
 
+.icon { 
+  font-size: 5em !important;
+  color: var(--dark-blue);
+}
+
+.icon:hover{
+  color: var(--lilac);
+}
+
 
 /* ----------- */
 /* NAV CLASSES */
