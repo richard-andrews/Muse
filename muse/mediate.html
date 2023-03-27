@@ -11,8 +11,6 @@
     </head>
     
     <body>
-        <script src="./scripts/change_artefact.js"></script>
-
         <div id="homepage" class="flex column whole">
             <!-- Header -->
             <div id="header" class="flex row whole">
@@ -30,11 +28,13 @@
 
             <!-- main page -->
             <div id="main" class="flex column whole gradient ">
+                <button id="myBtn">Shuffle</button>
                 <!-- art -->
                 <div id="art" class="flex whole centre-horz">
+                    
                     <div id="artefact" class="padding">
-                        <iframe title="SketchFab Asset" 
-                        frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/64d0b7662b59417986e9d693624de97a/embed?autostart=1&camera=0&annotations_visible=1&transparent=1&ui_animations=0&ui_inspector=0&ui_ar=1&ui_settings=0&ui_vr=0&ui_fullscreen=0&dnt=1"> </iframe> 
+                        <iframe id="iframe" title="SketchFab Asset" 
+                        frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share height="100%" width="100%" src="https://sketchfab.com/models/64d0b7662b59417986e9d693624de97a/embed?autostart=1&camera=0&annotations_visible=1&transparent=1&ui_animations=0&ui_inspector=0&ui_ar=1&ui_settings=0&ui_vr=0&ui_fullscreen=0&dnt=1"> </iframe> 
                     </div>
                 </div>
 
@@ -76,6 +76,8 @@
                 </div>
 
             </div>    
-        </div>    
+        </div>
+        
+        <script src="./scripts/change_artefact.js"></script>
     </body>
 </html>
