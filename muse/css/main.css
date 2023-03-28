@@ -9,9 +9,9 @@
 }
 
 
-/* ------- */
-/* GENERAL */
-/* ------- */
+/* -------- */
+/* --TAGS-- */
+/* -------- */
 * {
 margin: 0px;
 padding: 0px;
@@ -82,7 +82,7 @@ color: var(--egg);
 
 
 /* ----------- */
-/* NEW CLASSES */
+/* --CLASSES-- */
 /* ----------- */
 .gradient{
   /* cite gradient maker here https://coolors.co/gradient-maker/ */
@@ -155,8 +155,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   color: var(--dark-blue);
 }
 
-.icon:hover{
+.icon:hover {
   color: var(--lilac);
+}
+
+.changeArtefact {
+  background-color: var(--egg);
+  border-radius: 50%;
+  height: 6em;
+  width: 6em;
 }
 
 
