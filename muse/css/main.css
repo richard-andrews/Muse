@@ -176,12 +176,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   font-weight: 500 !important;
 }
 
-.active{
-  background-color: var(--lilac);
-  color: var(--dark-blue);
+.nav-item:hover{
+  background-color: var(--egg); 
   border-radius: 0.5em;
 }
 
+.active{
+  background-color: var(--lilac) !important;
+  color: var(--dark-blue) !important;
+  border-radius: 0.5em;
+}
 
 /* ------- */
 /* NEW IDs */
