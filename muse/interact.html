@@ -30,30 +30,30 @@
                 <!-- audio -->
                 <div id="meditation" class="flex row centre-vert whole">
                     <div id="audioOptions" class="flex half distribute centre-text padding">
-                        <button class = "changeAudio active">
+                        <button id="waves" class = "changeAudio active">
                             <span class="material-symbols-rounded icon">
                             waves
                             </span>
                         </button>
-                        <button class = "changeAudio">
+                        <button id="crickets" class = "changeAudio">
                             <span class="material-symbols-rounded icon">
                             emoji_nature
                             </span>
                         </button>
-                        <button class = "changeAudio">
+                        <button id="guidedMeditation" class = "changeAudio">
                             <span class="material-symbols-rounded icon">
-                            thunderstorm
+                            self_improvement
                             </span>
                         </button> 
-                        <button class = "changeAudio">
+                        <button id="rain" class = "changeAudio">
                             <span class="material-symbols-rounded icon">
                             rainy
                             </span>
-                        </button>                        
+                        </button>                     
                     </div>
                     <div class="flex half centre-horz padding">
-                        <audio controls autoplay loop>
-                            <source src="./audio/Short - Sound Effect 01.mp3" type="audio/mpeg">
+                        <audio id="player"controls autoplay loop>
+                            <source id="playerSource" src="./audio/waves.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
@@ -119,6 +119,7 @@
         </div>
         
         <script src="./scripts/changeArtefact.js"></script>
+        <script src="./scripts/changeAudio.js"></script>
         
     </body>
 </html>
