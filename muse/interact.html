@@ -29,20 +29,25 @@
 
                 <!-- audio -->
                 <div id="meditation" class="flex row centre-vert whole">
-                    <div class="flex half distribute centre-text padding">
-                        <button id="left" class = "changeArtefact">
+                    <div id="audioOptions" class="flex half distribute centre-text padding">
+                        <button class = "changeAudio active">
                             <span class="material-symbols-rounded icon">
-                            arrow_back
+                            waves
                             </span>
                         </button>
-                        <button id="left" class = "changeArtefact">
+                        <button class = "changeAudio">
                             <span class="material-symbols-rounded icon">
-                            arrow_back
+                            emoji_nature
                             </span>
                         </button>
-                        <button id="left" class = "changeArtefact">
+                        <button class = "changeAudio">
                             <span class="material-symbols-rounded icon">
-                            arrow_back
+                            thunderstorm
+                            </span>
+                        </button> 
+                        <button class = "changeAudio">
+                            <span class="material-symbols-rounded icon">
+                            rainy
                             </span>
                         </button>                        
                     </div>
@@ -55,18 +60,24 @@
 
                 <!-- artefact -->
                 <div id="art" class="flex row whole distribute">
-                    <div class="flex centre-horz centre-vert">
-                        <button id="left" class = "changeArtefact">
+                    <div id="leftContainer" class="flex centre-horz centre-vert">
+                        <button id="leftButton" class = "changeArtefactButton">
                             <span class="material-symbols-rounded icon">
                             arrow_back
                             </span>
                         </button>
                     </div>
                     <div id="artefact" class="padding">
-                        <iframe id="iframe" title="SketchFab Asset" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share height="100%" width="100%" src="https://sketchfab.com/models/64d0b7662b59417986e9d693624de97a/embed?autostart=1&camera=0&annotations_visible=1&transparent=1&ui_animations=0&ui_inspector=0&ui_ar=1&ui_settings=0&ui_vr=0&ui_fullscreen=0&dnt=1"> </iframe> 
+                        <iframe id="iframe" title="SketchFab Asset" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share height="100%" width="100%" src="https://sketchfab.com/models/752e69d34933438d8230ac829d22300e/embed?autostart=1&camera=0&annotations_visible=1&transparent=1&ui_animations=0&ui_inspector=0&ui_ar=1&ui_settings=0&ui_vr=0&ui_fullscreen=0&dnt=1"> </iframe> 
                     </div>
-                    <div class="flex centre-horz centre-vert">
-                        <button id="right" class = "changeArtefact">
+                    <div id="rightContainer" class="flex centre-horz centre-vert mobile-distribute">
+                        <button id="leftButtonMobile" class = "changeArtefactButton">
+                        
+                            <span  class="material-symbols-rounded icon">
+                            arrow_back
+                            </span>
+                        </button>
+                        <button id="rightButton" class = "changeArtefactButton">
                         
                             <span  class="material-symbols-rounded icon">
                             arrow_forward
@@ -107,7 +118,7 @@
 
         </div>
         
-        <script src="./scripts/change_artefact.js"></script>
+        <script src="./scripts/changeArtefact.js"></script>
         
     </body>
 </html>
