@@ -39,13 +39,12 @@ text-decoration: none;
 }
 
 a:hover {
-color: var(--lilac);
+color: var(--egg);
 text-decoration: none; 
 }
 
 .active:hover>*{
-  color:var(--dark-blue) !important;
-  text-decoration: none;
+  pointer-events: none;
 }
 
 
@@ -151,21 +150,31 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 }
 
 .icon { 
-  font-size: 5em !important;
+  font-size: 4em !important;
   color: var(--dark-blue);
 }
 
-.icon:hover {
-  color: var(--lilac);
-}
-
-.changeArtefact {
+.changeArtefactButton {
   background-color: var(--egg);
   border-radius: 50%;
   height: 6em;
   width: 6em;
 }
 
+.changeAudio {
+  background-color: var(--egg);
+  border-radius: 50%;
+  height: 6em;
+  width: 6em;
+}
+
+.changeArtefactButton:hover, .changeAudio:hover { 
+  background-color: var(--lilac );
+}
+
+.changeArtefactButton:hover > .icon, .changeAudio:hover > .icon {
+  color: var(--egg);
+}
 
 /* ----------- */
 /* NAV CLASSES */
@@ -174,17 +183,23 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   width:20%;
   font-size: 1.5em !important;
   font-weight: 500 !important;
+  border-radius: 0.5em;
 }
 
 .nav-item:hover{
-  background-color: var(--egg); 
-  border-radius: 0.5em;
+  background-color: var(--lilac); 
+}
+
+.nav-item:hover > a {
+  color: var(--egg)
 }
 
 .active{
-  background-color: var(--lilac) !important;
-  color: var(--dark-blue) !important;
-  border-radius: 0.5em;
+  background-color: var(--dark-blue) !important;
+}
+
+.active > *{
+  color: var(--egg) !important;
 }
 
 /* ------- */
@@ -228,6 +243,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   width:60%;
 }
 
+#leftButtonMobile{
+  display: none;
+}
+
 
 /* ------ */
 /* MOBILE */
@@ -242,8 +261,24 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   .nav-item{
     width:50%;
   }
+  .mobile-distribute{
+    flex-direction: row;
+    justify-content: space-around;
+  }
   #artefact{
+    order: 1;
     max-width: 100%;
+  }
+  #leftContainer{
+    display: none;
+    height: 0%;
+  }
+  #rightContainer{
+    order:2;
+    width:100%;
+  }
+  #leftButtonMobile{
+    display: inline-block;
   }
   .semi{
     height: 50%;
