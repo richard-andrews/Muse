@@ -5,7 +5,7 @@
   --blue: #759FBC;
   --light-blue: #9BC4CC;
   --egg: #F4EBD9;
-
+  --translucentEgg: #F4EBD980;
 }
 
 
@@ -80,6 +80,22 @@ color: var(--egg);
 line-height: 2em;
 }
 
+#idInput{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: var(--dark-blue);
+  background-color: var(--translucentEgg);
+  border-color: var(--egg);
+  border-style: solid;
+  border-width: medium;
+}
+
+#submitButton {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: var(--dark-blue);
+  font-weight: 600;
+}
 
 /* ----------- */
 /* --CLASSES-- */
@@ -182,8 +198,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 /* ----------- */
 .nav-item{
   width:20%;
-  font-size: 1.5em !important;
-  font-weight: 500 !important;
+  /* font-size: 1.5em !important;
+  font-weight: 500 !important; */
   border-radius: 0.5em;
 }
 
@@ -202,6 +218,25 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 .active > *{
   color: var(--egg) !important;
 }
+
+/* ---------------- */
+/* -SURVEY BUTTONS- */
+/* ---------------- */
+.text-button{
+  width:20%;
+  border-radius: 0.5em;
+  background-color: var(--egg);
+}
+
+.text-button:hover{
+  background-color: var(--lilac); 
+}
+
+.disabled{
+  background-color: var(--translucentEgg) !important;
+  pointer-events: none;
+}
+
 
 /* ------- */
 /* NEW IDs */
