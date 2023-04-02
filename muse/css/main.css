@@ -39,7 +39,7 @@ text-decoration: none;
 }
 
 a:hover {
-color: var(--egg);
+color: var(--lilac);
 text-decoration: none; 
 }
 
@@ -72,11 +72,12 @@ font-weight: 600;
 color:var(--egg);
 }
 
-p{
+li, p{
 font-family: 'Montserrat', sans-serif;
 font-size: 1em;
 font-weight: 400;
 color: var(--egg);
+line-height: 2em;
 }
 
 
@@ -247,6 +248,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   display: none;
 }
 
+#instructions{
+  width:70%;
+  margin:auto;
+}
+
 
 /* ------ */
 /* MOBILE */
@@ -265,9 +271,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
     flex-direction: row;
     justify-content: space-around;
   }
+  #art{
+    align-items: center;
+  }
   #artefact{
     order: 1;
-    max-width: 100%;
+    max-width: 90%;
+    aspect-ratio: auto;
   }
   #leftContainer{
     display: none;
@@ -285,5 +295,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   }
   #footer{
     height:auto;
+  }
+  #main{
+    height: auto;
   }
 }
