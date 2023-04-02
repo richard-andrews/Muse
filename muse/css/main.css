@@ -269,7 +269,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   }
   .mobile-distribute{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   #art{
     align-items: center;
