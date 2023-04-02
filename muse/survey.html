@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Muse is where art therapy and mindfulness meditation meet to reduce stress for it's users. This is a prototype as part of my final year project for the University of Bath."/>
         <link rel="icon" href="./graphics/musefavicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Jost">
         <link type="text/css" rel="stylesheet" href="./css/main.css" />
     </head>
     <body>        
@@ -16,7 +16,7 @@
                 <div class="flex centre-vert centre-horz half">
                     <img src="./graphics/muse.png" alt="Muse logo" class="padding logo">
                 </div> 
-                <div class="flex centre-vert half row distribute">
+                <div class="flex centre-vert half row distribute padding">
                     <div class="nav-item padding centre-text centre-horz"><a href="./home.html"  title="Visit our home page">Home</a></div>
                     <div class="nav-item padding centre-text centre-horz"><a href="./about.html" title="All about Muse">About</a></div>
                     <div class="nav-item padding centre-text centre-horz active"><a href="./survey.html" title="Complete the survey">Survey</a></div>
@@ -25,8 +25,19 @@
 
             <div id="main" class="flex column whole centre-vert centre-horz gradient ">
                 <!-- Survey -->
-                <div id="artefact" class="flex whole padding">
+                <div id="survey" class="flex whole padding">
                     <iframe width="100%" height="100%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=Ij1-N6FOLUKwrY_MiUBrnh7jtD4wCqdMt4Td02JgZR9UNk1USFJZTTdKQjFVMU9KREFRNUFST0kxRC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                </div>
+                <div class="flex whole column padding">
+                    <h2 class="centre-text">Please enter your ID number</h2>
+                    <div class="flex whole row distribute padding">
+                        <input id="idInput" class="text-button half centre-text" type="number" min="0">
+                        <button id="submitButton" class="text-button padding half">Submit</button>
+                    </div>
+                    <div class="flex whole row whole centre distribute mobile-distribute padding " >
+                        <div id="listenButton" class="text-button padding centre-horz centre-text disabled"><a href="./listen.html">Listen</a></div>
+                        <div id="interactButton" class="text-button padding centre-horz centre-text centre-vert disabled"><a href="./interact.html">Interact</a></div>
+                    </div>
                 </div>
             </div>
             
@@ -55,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-    </body>
+        <script src="./scripts/submitID.js"></script>
 </html>
