@@ -219,7 +219,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   height: 80%;
 }
 
-#artefact{
+#artefact, #survey{
   max-width: 70%;
   aspect-ratio: 4/3;
 }
@@ -274,9 +274,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   #art{
     align-items: center;
   }
-  #artefact{
+  #artefact, #surveys{
     order: 1;
-    max-width: 90%;
+    width: 90%;
     aspect-ratio: auto;
   }
   #leftContainer{
