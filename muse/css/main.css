@@ -2,10 +2,10 @@
 :root{
   --lilac: #D499B9;
   --dark-blue: #1F5673;
-  --blue: #759FBC;
-  --light-blue: #9BC4CC;
-  --egg: #F4EBD9;
-  --translucentEgg: #F4EBD980;
+  --blue: #456895;
+  --light-blue: #6791B5;
+  --egg: #FBF3D6;
+  --translucentEgg: #FBF3D680;
 }
 
 
@@ -18,9 +18,8 @@ padding: 0px;
 border: 0;
 font-family: 'Montserrat', sans-serif;
 }
-*,
-*:before,
-*:after {
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -34,13 +33,14 @@ scroll-behavior: smooth;
 /* LINKS */
 /* ----- */
 a:link, a:visited, a:active {
-color: var(--dark-blue);
-text-decoration: none; 
+  color: var(--egg);
+  text-decoration: none; 
+  font-weight: bolder;
 }
 
 a:hover {
-color: var(--lilac);
-text-decoration: none; 
+  color: var(--lilac);
+  text-decoration: none; 
 }
 
 .active:hover>*{
@@ -52,61 +52,47 @@ text-decoration: none;
 /* HEADINGS */
 /* -------- */
 h1{ 
-font-family: 'Lora', serif;
-font-size: 2.5em;
-font-weight: 500;
-color: var(--egg);
+  font-family: 'Lora', serif;
+  font-size: 3em;
+  font-weight: 500;
+  color: var(--egg);
 } 
 
 h2{ 
-font-family: 'Monserrat', sans-serif;
-font-size: 1.5em;
-font-weight: 500;
-color:var(--egg);
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  font-weight: 500;
+  color:var(--egg);
 } 
 
-h3{ 
-font-family: 'Monserrat', sans-serif;
-font-size: 1em;
-font-weight: 600;
-color:var(--egg);
-}
-
 li, p{
-font-family: 'Montserrat', sans-serif;
-font-size: 1em;
-font-weight: 400;
-color: var(--egg);
-line-height: 2em;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--egg);
+  line-height: 2em;
 }
 
 #idInput{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  color: var(--dark-blue);
-  background-color: var(--translucentEgg);
+  color:var(--egg) !important;
+  background-color: var(--blue);
   border-color: var(--egg);
+  font-weight: normal !important;
   border-style: solid;
   border-width: medium;
 }
 
-#submitButton {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  color: var(--dark-blue);
-  font-weight: 600;
-}
 
 /* ----------- */
 /* --CLASSES-- */
 /* ----------- */
 .gradient{
   /* cite gradient maker here https://coolors.co/gradient-maker/ */
-background: hsla(190, 32%, 70%, 1);
-background: linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
-background: -moz-linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
-background: -webkit-linear-gradient(270deg, hsla(190, 32%, 70%, 1) 10%, hsla(205, 35%, 60%, 1) 90%);
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", endColorstr="#759FBC", GradientType=1 );
+background: var(--light-blue);
+background: linear-gradient(270deg, var(--light-blue) 20%, var(--blue) 80%);
+background: -moz-linear-gradient(270deg,var(--light-blue) 20%, var(--blue) 80%);
+background: -webkit-linear-gradient(270deg,var(--light-blue) 20%, var(--blue) 80%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-blue), endColorstr=var(--blue), GradientType=1 );
 }
 
 .flex{
@@ -143,6 +129,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 
 .padding{
   padding: 10px;
+}
+
+.margin{
+  margin:10px;
 }
 
 .whole{
@@ -198,8 +188,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
 /* ----------- */
 .nav-item{
   width:20%;
-  /* font-size: 1.5em !important;
-  font-weight: 500 !important; */
+  font-size: 1.7em !important;
   border-radius: 0.5em;
 }
 
@@ -215,10 +204,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   background-color: var(--dark-blue) !important;
 }
 
-.active > *{
-  color: var(--egg) !important;
-}
-
 /* ---------------- */
 /* -SURVEY BUTTONS- */
 /* ---------------- */
@@ -226,10 +211,21 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BC4CC", en
   width:20%;
   border-radius: 0.5em;
   background-color: var(--egg);
+  font-size: 1em;
+  font-weight: bolder;
+  color: var(--dark-blue) !important;
 }
 
 .text-button:hover{
-  background-color: var(--lilac); 
+  background-color: var(--lilac);
+  color: var(--egg) !important;
+}
+
+.text-button>a{
+  color:var(--dark-blue);
+}
+.text-button:hover>a{
+  color:var(--egg);
 }
 
 .disabled{
