@@ -158,11 +158,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 
 .icon { 
   font-size: 4em !important;
-  color: var(--dark-blue);
+  color: inherit;
 }
 
 .changeArtefactButton {
   background-color: var(--egg);
+  color:var(--dark-blue);
   border-radius: 50%;
   height: 6em;
   width: 6em;
@@ -170,6 +171,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 
 .changeAudio {
   background-color: var(--egg);
+  color:var(--dark-blue);
   border-radius: 50%;
   height: 6em;
   width: 6em;
@@ -177,9 +179,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 
 .changeArtefactButton:hover, .changeAudio:hover { 
   background-color: var(--lilac );
-}
-
-.changeArtefactButton:hover > .icon, .changeAudio:hover > .icon {
   color: var(--egg);
 }
 
@@ -202,6 +201,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 
 .active{
   background-color: var(--dark-blue) !important;
+  color: var(--egg) !important;
 }
 
 /* ---------------- */
@@ -252,11 +252,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 
 #artefact, #survey{
   max-width: 70%;
-  aspect-ratio: 4/3;
+  height: 70vh;
 }
 
 #meditation{
-  height:20%;
+  height:30vh;
 }
 
 #footer{
@@ -308,7 +308,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
   #artefact, #surveys{
     order: 1;
     width: 90%;
-    aspect-ratio: auto;
   }
   #leftContainer{
     display: none;
