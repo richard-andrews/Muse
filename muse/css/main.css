@@ -35,7 +35,7 @@ scroll-behavior: smooth;
 a:link, a:visited, a:active {
   color: var(--egg);
   text-decoration: none; 
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 a:hover {
@@ -242,9 +242,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
   background-color: var(--light-blue);
 }
 
-#main{
+/* #main{
   height:100vh;
-}
+} */
 
 #art{
   height: 80%;
