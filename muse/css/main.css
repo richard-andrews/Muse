@@ -253,6 +253,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 #artefact, #survey{
   max-width: 70%;
   height: 70vh;
+  aspect-ratio: 4/3;
 }
 
 #meditation{
