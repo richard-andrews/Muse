@@ -192,11 +192,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=var(--light-b
 }
 
 .nav-item:hover{
-  background-color: var(--lilac); 
+  background-color: var(--lilac);
+  color: var(--egg); 
 }
 
 .nav-item:hover > a {
-  color: var(--egg)
+  color: var(--egg);
 }
 
 .active{

@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About | Muse</title>
+        <title>Interact | Muse</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Muse is where art therapy and mindfulness meditation meet to reduce stress for it's users. This is a prototype as part of my final year project for the University of Bath."/>
         <link rel="icon" href="./graphics/musefavicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,1,200" />
         <link type="text/css" rel="stylesheet" href="./css/main.css" />
     </head>
-    
     <body>
         <div class="flex column whole">
-            <!-- header -->
+            <!-- Header -->
             <div id="header" class="flex row whole">
                 <div class="flex centre-vert centre-horz half">
                     <img src="./graphics/muse.png" alt="Muse logo" class="padding logo">
                 </div> 
                 <div class="flex centre-vert half row distribute padding">
-                    <a href="./home.html"  title="Visit our home page" class="nav-item padding centre-text centre-horz">Home</a>
-                    <a href="./survey.html" title="Complete the survey"  class="nav-item padding centre-text centre-horz">Survey</a>
-                    <a href="./meditate.html" title="Experience Muse"  class="nav-item padding centre-text centre-horz">Meditate</a>
-                    <a href="./about.html" title="All about Muse" class="nav-item padding centre-text centre-horz active">About</a>
-                </div>                
+                        <a href="./home.html"  title="Visit our home page" class="nav-item padding centre-text centre-horz">Home</a>
+                        <a href="./survey.html" title="Complete the survey"  class="nav-item padding centre-text centre-horz">Survey</a>
+                        <a href="./meditate.html" title="Experience Muse"  class="nav-item padding centre-text centre-horz active">Meditate</a>
+                        <a href="./about.html" title="All about Muse" class="nav-item padding centre-text centre-horz">About</a>  
+                </div>               
             </div>
 
-            <!-- about -->
-            <div id="main" class="flex gradient centre-horz centre-vert whole column">
-                <div id="about" class="flex column" >
-                    <h1>About</h1>
-                    <p>Muse is an app created by Richard Andrews for BSc. Computer Science Final Year project at the University of Bath, UK. Muse looks to combine mindfulness meditation with art therapy to induce calmness and reduce stress. <br> <br>We hope you enjoy!</p>
+            <!-- ID input -->
+            <div id="main" class="flex column whole centre-vert centre-horz gradient">
+                <div class="flex whole column padding">
+                    <h2 class="centre-text">Please enter your ID number</h2>
+                    <div class="flex whole row distribute padding">
+                        <input id="idInput" class="text-button margin half centre-text" type="number" min="0">
+                        <button id="submitButton" class="text-button margin padding half">Submit</button>
+                    </div>
+                    <div class="flex whole row whole centre distribute mobile-distribute padding " >
+                        <div id="listenButton" class="text-button padding centre-horz centre-text disabled"><a href="./listen.html">Listen</a></div>
+                        <div id="interactButton" class="text-button padding centre-horz centre-text centre-vert disabled"><a href="./interact.html">Interact</a></div>
+                    </div>
                 </div>
             </div>
 
-            
             <!-- footer -->
             <div id="footer" class="flex row whole centre-vert">
                 <div class="flex half semi centre-vert"> 
@@ -60,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            
         </div>
+        <script src="./scripts/submitID.js"></script>
     </body>
 </html>
