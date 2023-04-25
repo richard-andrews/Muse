@@ -27,14 +27,15 @@
             <!-- ID input -->
             <div id="main" class="flex column whole centre-vert centre-horz gradient">
                 <div class="flex whole column padding">
-                    <h2 class="centre-text">Please enter your ID number</h2>
+                    <h2 class="centre-text padding margin">Please enter your ID number</h2>
+                    <p class="centre-text padding margin">You will be offered EITHER 'Listen' OR 'Interact', please click the link in the box to go to begin your meditation.</p>
                     <div class="flex whole row distribute padding">
                         <input id="idInput" class="text-button margin half centre-text" type="number" min="0">
                         <button id="submitButton" class="text-button margin padding half">Submit</button>
                     </div>
                     <div class="flex whole row whole centre distribute mobile-distribute padding " >
-                        <div id="listenButton" class="text-button padding centre-horz centre-text disabled"><a href="./listen.html">Listen</a></div>
-                        <div id="interactButton" class="text-button padding centre-horz centre-text centre-vert disabled"><a href="./interact.html">Interact</a></div>
+                        <a id="listenButton" class="text-button padding centre-horz centre-text centre-vert disabled" href="./listen.html">Listen</a>
+                        <a id="interactButton" class="text-button padding centre-horz centre-text centre-vert disabled" href="./interact.html">Interact</a>
                     </div>
                 </div>
             </div>
